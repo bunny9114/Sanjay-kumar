@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kota Sanjay Kumar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(135deg, #009fff, #ec2f4b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffe600;
+        }
+
+        section {
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: "";
+            width: 50%;
+            height: 4px;
+            background-color: #009fff;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        #about {
+            background-color: #fff;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        #skills {
+            background-color: #f9f9f9;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            background-color: #009fff;
+            color: #fff;
+            padding: 2rem;
+            width: 250px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #projects {
+            background-color: #fff;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: #2a9d8f; /* Soft Blue */
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        #contact {
+            background-color: #f4f4f4;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        #contact .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 2;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        #contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        #contact .contact-info p {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer .social-icons {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #009fff;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .skills-container,
+            .project-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kota Sanjay Kumar</h1>
+        <p>Aspiring Software Developer | IIT Indore CSE</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm Kota Sanjay Kumar, a Computer Science Engineering student from IIT Indore with a deep passion for problem-solving and software development.
+            I’m driven by curiosity and a love for learning, always seeking out new challenges that push me to grow and innovate as a developer.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Front-End Development</h3>
+                <p>HTML, CSS, JavaScript, React.js</p>
+            </div>
+            <div class="skill-box">
+                <h3>Back-End Development</h3>
+                <p>MySQL, MongoDB, Node.js</p>
+            </div>
+            <div class="skill-box">
+                <h3>Programming Languages</h3>
+                <p>Python, C, C++</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Online Library Management System</h3>
+                <p>A system to manage and track books, borrowers, and inventory in a library environment.</p>
+            </div>
+            <div class="project-card">
+                <h3>Amazon Front Layout Design</h3>
+                <p>A front-end layout design project inspired by Amazon, focusing on UI/UX improvements.</p>
+            </div>
+            <div class="project-card">
+                <h3>Spotify Front Layout Design</h3>
+                <p>A front-end layout design project inspired by Spotify, focusing on its music streaming interface.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> sanjaykota41@gmail.com</p>
+            <p><strong>Phone:</strong> 7569800518</p>
+            <p><strong>Address:</strong> CVR Hostel, IIT Indore, Simrol, Indore, MP-452020</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me on:</p>
+        <div class="social-icons">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+        </div>
+        <p>© 2024 Kota Sanjay Kumar | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
